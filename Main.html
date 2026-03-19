@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Support Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Optional: basic styling for the page -->
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 2rem; background: #f7f8fa; }
+    .wrap { max-width: 720px; margin: 0 auto; background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.5rem; }
+    h1 { margin-top: 0; font-size: 1.25rem; }
+    .note { color: #4b5563; font-size: 0.95rem; }
+	body {
+		background-image: url('MecwaBackground.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover; /* This makes the image fill the whole screen */
+	  }
+  </style>
+
+  
+  
+</head>
+<body>
+
+  <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DAD000009rdE9',
+				'Github',
+				'https://mecwacare--uat.sandbox.my.site.com/ESWGithub1773840016537',
+				{
+					scrt2URL: 'https://mecwacare--uat.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://mecwacare--uat.sandbox.my.site.com/ESWGithub1773840016537/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>
+
